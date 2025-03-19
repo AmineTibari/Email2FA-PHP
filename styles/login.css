@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: #272c38;
+    font-family: "Cairo", sans-serif;
+}
+header #logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+header button {
+    font-family: "Cairo", sans-serif;
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header .account a button {
+    transition: background-color 1s ease, color 1s ease;
+}
+
+header .account a button:hover {
+    background: #272c38;
+    color: #ffffff;
+    border: 2px solid #fff;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 102px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+.container form {
+    display: inline-block;
+}
+
+
+.container .login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #272c38;
+    width: auto;
+    padding: 25px;
+    background: #ffffff;
+}
+.container .login-section #form-title {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Cairo", sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.container .form-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .form-links a {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    display: block;
+}
+.container form label {
+    display: inline-block;
+    width: 120px;
+    font-family: "Poppins", sans-serif;
+
+}
+.container form input[type=email],
+.container form input[type=password] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 260px;
+    font-family: "Cairo", sans-serif;
+}
+.container form input[type=submit] {
+//font-family: "Poppins", sans-serif;
+    font-family: "Cairo", sans-serif;
+    height: 40px;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 1px solid #272c38;
+    width: 100%;
+    transition: background-color 1s ease, color 1s ease;
+    margin: 10px 0;
+}
+.container form input[type=submit]:hover {
+    background: #272c38;
+    color: #fff;
+
+}
+.verification_code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    margin: 5px 0;
+}
+
+.verification_code input {
+    flex: 1;
+    padding: 10px;
+    font-family: "Cairo", sans-serif;
+    border: 1px solid #272c38;
+
+}
+.verification_code input:focus {
+    outline: none;
+}
+
+.verification_code button {
+    width: 100px;
+    height: 47px;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #272c38;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.verification_code button:hover {
+    background: #272c38;
+    color: #fff;
+}
+.error-message {
+    color: #ff4d4d;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
